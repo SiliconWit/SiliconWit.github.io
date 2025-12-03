@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Sam Macharia - PhD in Electronics & Information Systems Engineering. Researcher, educator, and engineer specializing in Research, Education, and Product Development.">
+    <meta name="author" content="Dr. Sam Macharia">
+    <meta name="keywords" content="Sam Macharia, PhD, Research, Education, Product Development, AIoT, BioPhysics, Molecular Motors, SiliconWit">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <title>Dr. Sam Macharia (PhD) - Research, Education & Product Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --primary-solid: #667eea;
+            --primary-dark: #5a67d8;
+            --research: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --education: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            --product: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            --text-primary: #2d3748;
+            --text-secondary: #4a5568;
+            --text-muted: #718096;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f7fafc;
+            --bg-card: rgba(255, 255, 255, 0.95);
+            --border: #e2e8f0;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.1);
+            --border-radius: 16px;
+            --border-radius-sm: 8px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-secondary);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header Styles */
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 6rem 0 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/img/demopic/motorProtein.jpg') center/cover;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+            z-index: 1;
+        }
+
+        header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 6px solid rgba(255, 255, 255, 0.3);
+            box-shadow: var(--shadow-xl);
+            transition: var(--transition);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -0.025em;
+            background: linear-gradient(45deg, #fff, #e2e8f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 400;
+            opacity: 0.95;
+            margin-bottom: 1rem;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .three-pillars {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .pillar {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 1rem 1.5rem;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+            text-align: center;
+            flex: 1;
+            max-width: 180px;
+        }
+
+        .pillar:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-4px);
+        }
+
+        .pillar-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .pillar-title {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .credentials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .credential-badge {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: var(--transition);
+        }
+
+        .credential-badge:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius-sm);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-solid);
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        /* Main Content */
+        main {
+            padding: 4rem 0;
+        }
+
+        section {
+            margin-bottom: 6rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .about-content {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .fun-fact {
+            background: linear-gradient(135deg, #f6f9fc 0%, #e9ecef 100%);
+            border-left: 4px solid var(--primary-solid);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            font-style: italic;
+            position: relative;
+        }
+
+        .fun-fact::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary-solid);
+            position: absolute;
+            top: -10px;
+            left: 1rem;
+            opacity: 0.3;
+        }
+
+        .quick-stats {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Core Areas Section */
+        .core-areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .area-card {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .area-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            transition: var(--transition);
+        }
+
+        .area-card.research::before {
+            background: var(--research);
+        }
+
+        .area-card.education::before {
+            background: var(--education);
+        }
+
+        .area-card.product::before {
+            background: var(--product);
+        }
+
+        .area-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .area-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .area-card.research .area-icon {
+            background: var(--research);
+        }
+
+        .area-card.education .area-icon {
+            background: var(--education);
+        }
+
+        .area-card.product .area-icon {
+            background: var(--product);
+        }
+
+        .area-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .area-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .area-highlights {
+            list-style: none;
+        }
+
+        .area-highlights li {
+            padding: 0.5rem 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .area-highlights li:last-child {
+            border-bottom: none;
+        }
+
+        .area-highlights li::before {
+            content: '→';
+            margin-right: 0.5rem;
+            color: var(--primary-solid);
+        }
+
+        /* Enhanced Timeline */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--primary);
+            transform: translateX(-50%);
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 4rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .timeline-item:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            background: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            width: calc(50% - 2rem);
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .timeline-content:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .timeline-year {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            z-index: 10;
+            box-shadow: var(--shadow);
+        }
+
+        .timeline-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .timeline-institution {
+            font-weight: 500;
+            color: var(--primary-solid);
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .timeline-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-achievements {
+            background: rgba(102, 126, 234, 0.05);
+            padding: 1rem;
+            border-radius: var(--border-radius-sm);
+            border-left: 3px solid var(--primary-solid);
+        }
+
+        .timeline-achievements h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary-solid);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .timeline-achievements ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .timeline-achievements li {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.3rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .timeline-achievements li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary-solid);
+        }
+
+        /* Professional Links Grid */
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .link-category {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .link-category:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .category-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .category-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8rem;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            border-radius: var(--border-radius-sm);
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--text-secondary);
+            border: 1px solid transparent;
+        }
+
+        .link-item:hover {
+            background: rgba(102, 126, 234, 0.05);
+            border-color: rgba(102, 126, 234, 0.2);
+            transform: translateX(4px);
+        }
+
+        .link-icon {
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.7rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 4rem 0 2rem;
+            margin-top: 6rem;
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .three-pillars {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .pillar {
+                max-width: none;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 1rem;
+                justify-content: center;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            /* Enhanced mobile timeline */
+            .timeline {
+                padding: 0 1rem;
+            }
+
+            .timeline::before {
+                left: 1.5rem;
+                width: 2px;
+            }
+
+            .timeline-item {
+                flex-direction: row !important;
+                padding-left: 3rem;
+                margin-bottom: 3rem;
+            }
+
+            .timeline-content {
+                width: 100%;
+                padding: 1.5rem;
+            }
+
+            .timeline-year {
+                left: 1.5rem;
+                transform: translateY(-50%);
+                padding: 0.5rem 0.75rem;
+                font-size: 0.8rem;
+            }
+
+            .timeline-achievements {
+                padding: 0.75rem;
+            }
+
+            .timeline-achievements li {
+                font-size: 0.85rem;
+                line-height: 1.4;
+            }
+
+            .credentials {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .core-areas {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .profile-img {
+                width: 140px;
+                height: 140px;
+            }
+
+            .about-content,
+            .timeline-content {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Loading Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll Progress */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(102, 126, 234, 0.2);
+            z-index: 1000;
+        }
+
+        .scroll-progress-bar {
+            height: 100%;
+            background: var(--primary);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="profile-section">
+                <img src="https://secure.gravatar.com/avatar/c7002a588fdbcedaec0c5f507752c5e0?s=250&d=mm&r=x" alt="Dr. Sam Macharia" class="profile-img">
+                <div class="hero-content">
+                    <h1>Dr. Sam Macharia (PhD)</h1>
+                    <p class="hero-subtitle">Researcher, Educator & Engineer</p>
+                    <p class="hero-description">Interested in science, computing, engineering, and philosophy.</p>
+                    
+                    <div class="three-pillars">
+                        <div class="pillar">
+                            <i class="fas fa-microscope pillar-icon"></i>
+                            <div class="pillar-title">Research</div>
+                        </div>
+                        <div class="pillar">
+                            <i class="fas fa-graduation-cap pillar-icon"></i>
+                            <div class="pillar-title">Education</div>
+                        </div>
+                        <div class="pillar">
+                            <i class="fas fa-rocket pillar-icon"></i>
+                            <div class="pillar-title">Product Development</div>
+                        </div>
+                    </div>
+                    
+                    <div class="credentials">
+                        <div class="credential-badge">PhD, Gifu University</div>
+                        <div class="credential-badge">Lecturer, DeKUT</div>
+                        <div class="credential-badge">EBK Registered</div>
+                        <div class="credential-badge">IEK Member</div>
+                        <div class="credential-badge">SiliconWit Founder</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#core-areas">Core Areas</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#links">Professional Links</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Bridging theory and practice through research, education, and innovation</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p>Researcher, educator, and engineer interested in science, computing, engineering, and philosophy.</p>
+                        
+                        <p>👯 Open to collaboration in <strong>Artificial Intelligence of Things (AIoT)</strong> and <strong>BioPhysics</strong>.</p>
+                        
+                        <p>👨‍💻 Summary of my work is available at <a href="https://orcid.org/0000-0002-7326-7502" target="_blank" style="color: var(--primary-solid); text-decoration: none;">orcid.org/0000-0002-7326-7502</a>.</p>
+                        
+                        <p>📝 Visit our new platform <a href="https://siliconwit.com/" target="_blank" style="color: var(--primary-solid); text-decoration: none;">SiliconWit.COM</a> for research, education, and product development.</p>
+                        
+                        <div class="fun-fact">
+                            <p>⚡ <strong>Fun fact:</strong> Science is, so far, the most reliable tool for uncovering objective truths about nature.</p>
+                        </div>
+                    </div>
+                    <div class="quick-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Publications</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Degrees</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Research</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Countries</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="core-areas" class="fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Core Focus Areas</h2>
+                    <p class="section-subtitle">Three pillars of my professional journey</p>
+                </div>
+                <div class="core-areas">
+                    <div class="area-card research">
+                        <div class="area-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3 class="area-title">Research</h3>
+                        <p class="area-description">Research in molecular motors, biosensors, and bio-inspired technologies with publications in peer-reviewed journals.</p>
+                        <ul class="area-highlights">
+                            <li>Molecular motor systems & microtubule dynamics</li>
+                            <li>Artificial Intelligence of Things (AIoT)</li>
+                            <li>BioPhysics & bio-inspired technologies</li>
+                            <li>Wireless sensor networks & IoT systems</li>
+                            <li>Publications in scientific journals</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="area-card education">
+                        <div class="area-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="area-title">Education</h3>
+                        <p class="area-description">Teaching and mentoring students in mechatronics engineering and related fields.</p>
+                        <ul class="area-highlights">
+                            <li>Lecturer in Mechatronics Engineering at DeKUT</li>
+                            <li>Curriculum development & innovation</li>
+                            <li>Student research supervision</li>
+                            <li>Academic program development</li>
+                            <li>International education experience (Kenya, Japan)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="area-card product">
+                        <div class="area-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="area-title">Product Development</h3>
+                        <p class="area-description">Translating research into practical solutions through collaborative innovations and engineering implementations.</p>
+                        <ul class="area-highlights">
+                            <li>SiliconWit.COM platform founder</li>
+                            <li>Collaborative research innovations</li>
+                            <li>3D-printed sensor technologies</li>
+                            <li>Engineering consulting & solutions</li>
+                            <li>Technology transfer & practical implementations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Professional Timeline</h2>
+                    <p class="section-subtitle">Key milestones, publications, and achievements</p>
+                </div>
+                <div class="timeline" id="timeline-container">
+                    <!-- Timeline will be generated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="links" class="fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Professional Networks</h2>
+                    <p class="section-subtitle">Connect across academic and professional platforms</p>
+                </div>
+                <div class="links-grid">
+                    <div class="link-category">
+                        <h3 class="category-title">
+                            <div class="category-icon"><i class="fas fa-graduation-cap"></i></div>
+                            Academic Profiles
+                        </h3>
+                        <a href="https://orcid.org/0000-0002-7326-7502" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-id-card"></i></div>
+                            <span>ORCID Profile (Primary)</span>
+                        </a>
+                        <a href="https://scholar.google.co.jp/citations?user=jLrt9VsAAAAJ&hl" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <span>Google Scholar</span>
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Sam-Macharia" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-flask"></i></div>
+                            <span>ResearchGate</span>
+                        </a>
+                        <a href="https://dkut.academia.edu/SamMacharia" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-university"></i></div>
+                            <span>Academia.edu</span>
+                        </a>
+                        <a href="https://sciprofiles.com/profile/SamMachariaPhD" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-microscope"></i></div>
+                            <span>SciProfiles</span>
+                        </a>
+                    </div>
+
+                    <div class="link-category">
+                        <h3 class="category-title">
+                            <div class="category-icon"><i class="fas fa-code"></i></div>
+                            Technical Platforms
+                        </h3>
+                        <a href="https://github.com/sammachariaphd" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fab fa-github"></i></div>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://stackoverflow.com/users/7842910/sam-macharia" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fab fa-stack-overflow"></i></div>
+                            <span>Stack Overflow</span>
+                        </a>
+                        <a href="https://dl.acm.org/profile/99660296729" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-database"></i></div>
+                            <span>ACM Digital Library</span>
+                        </a>
+                    </div>
+
+                    <div class="link-category">
+                        <h3 class="category-title">
+                            <div class="category-icon"><i class="fas fa-certificate"></i></div>
+                            Professional Bodies
+                        </h3>
+                        <a href="https://engineers.ebk.go.ke/search/search-card/UFJPRjAwNTA4Mw==" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-engineering"></i></div>
+                            <span>Engineers Board of Kenya (EBK)</span>
+                        </a>
+                        <a href="https://members.iekenya.org/search/search-card/UFJPRjAwMTI4MzA=" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-users"></i></div>
+                            <span>Institution of Engineers Kenya (IEK)</span>
+                        </a>
+                        <a href="https://mechatronics.dkut.ac.ke/dr-samuel-macharia-kangiri/" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-university"></i></div>
+                            <span>DeKUT Faculty Profile</span>
+                        </a>
+                    </div>
+
+                    <div class="link-category">
+                        <h3 class="category-title">
+                            <div class="category-icon"><i class="fas fa-rocket"></i></div>
+                            Platform & Projects
+                        </h3>
+                        <a href="https://siliconwit.com/" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-globe"></i></div>
+                            <span>SiliconWit Platform</span>
+                        </a>
+                        <a href="https://www.goodreads.com/SamMachariaPhD" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-book"></i></div>
+                            <span>Goodreads</span>
+                        </a>
+                        <a href="https://reviewers.joss.theoj.org/reviewers/3832" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-edit"></i></div>
+                            <span>JOSS Reviewer</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <h3 style="margin-bottom: 1rem; color: white;">Let's Collaborate</h3>
+                <p style="margin-bottom: 2rem; opacity: 0.8;">Interested in research, education, or product development opportunities?</p>
+                <div class="footer-links">
+                    <a href="https://orcid.org/0000-0002-7326-7502" target="_blank">ORCID</a>
+                    <a href="https://siliconwit.com/" target="_blank">SiliconWit</a>
+                    <a href="https://scholar.google.co.jp/citations?user=jLrt9VsAAAAJ&hl" target="_blank">Google Scholar</a>
+                    <a href="https://github.com/sammachariaphd" target="_blank">GitHub</a>
+                </div>
+                <p style="opacity: 0.6; font-size: 0.9rem;">&copy; <span id="copyright-year">2010 - 2025</span> Dr. Sam Macharia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ========================================
+        // TIMELINE DATA - Easy to Add New Milestones
+        // ========================================
+        // To add a new milestone, simply add a new object to this array
+        const timelineData = [
+            {
+                year: "2022 - Present",
+                title: "Lecturer & SiliconWit Founder",
+                institution: "Dedan Kimathi University of Technology",
+                description: "Conducting research in AIoT and BioPhysics while teaching mechatronics engineering. Founded SiliconWit for collaborative innovations in research, education, and practical implementations.",
+                achievementTitle: "Key Achievements",
+                achievements: [
+                    {
+                        year: "2025",
+                        text: "Published",
+                        link: "https://doi.org/10.1038/s41598-025-03384-y",
+                        title: "Active spiralling of microtubules driven by kinesin motors",
+                        journal: "in Scientific Reports"
+                    },
+                    {
+                        year: "2022",
+                        text: "Founded",
+                        link: "https://siliconwit.com/",
+                        title: "SiliconWit.COM platform",
+                        journal: ""
+                    },
+                    {
+                        year: "2022",
+                        text: "PhD Dissertation",
+                        link: "https://doi.org/10.5281/ZENODO.5745872",
+                        title: "Modelling and Simulation of Biosensors Driven by Myosin Motors",
+                        journal: ""
+                    },
+                    {
+                        year: "Ongoing",
+                        text: "Supervising student research projects in AIoT",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "Ongoing",
+                        text: "Curriculum development in mechatronics",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    }
+                ]
+            },
+            {
+                year: "2018 - 2022",
+                title: "PhD Research & Publications",
+                institution: "Gifu University, Japan",
+                description: "Research on molecular motor systems and bio-inspired technologies with publications in peer-reviewed journals.",
+                achievementTitle: "Major Publications",
+                achievements: [
+                    {
+                        year: "2022",
+                        text: "",
+                        link: "https://doi.org/10.1109/tnb.2022.3170562",
+                        title: "Motility resilience of molecular shuttles against defective motors",
+                        journal: "- IEEE Transactions on NanoBioscience"
+                    },
+                    {
+                        year: "2022",
+                        text: "",
+                        link: "https://doi.org/10.1038/s41598-022-06941-x",
+                        title: "Linking path and filament persistence lengths of microtubules gliding over kinesin",
+                        journal: "- Scientific Reports"
+                    },
+                    {
+                        year: "2022",
+                        text: "",
+                        link: "https://doi.org/10.1016/j.bios.2022.114011",
+                        title: "Effects of defective motors on the active transport in biosensors powered by biomolecular motors",
+                        journal: "- Biosensors and Bioelectronics"
+                    },
+                    {
+                        year: "2021",
+                        text: "",
+                        link: "https://doi.org/10.1007/978-3-030-92163-7_17",
+                        title: "A Mathematical Model Predicting Gliding Speed of Actin Molecular Shuttles",
+                        journal: "- LNICST"
+                    },
+                    {
+                        year: "2021",
+                        text: "",
+                        link: "https://doi.org/10.1109/mhs53471.2021.9767188",
+                        title: "Simulations of Actomyosin-Based Molecular Shuttles Controlled by External Force",
+                        journal: "- IEEE MHS Conference"
+                    }
+                ]
+            },
+            {
+                year: "2016 - 2018",
+                title: "Graduate Research & Teaching",
+                institution: "Dedan Kimathi University of Technology",
+                description: "Advanced studies in manufacturing and automation while serving as graduate assistant and conducting research on wireless sensor networks.",
+                achievementTitle: "Research Output",
+                achievements: [
+                    {
+                        year: "2019",
+                        text: "MSc Thesis",
+                        link: "https://doi.org/10.5281/ZENODO.5573869",
+                        title: "Design and Implementation of an Advanced System for Wind Resource Assessment",
+                        journal: ""
+                    },
+                    {
+                        year: "2018",
+                        text: "Published",
+                        link: "https://doi.org/10.3390/designs2030021",
+                        title: "Design and calibration of a 3D-printed cup-vane wireless sensor node",
+                        journal: "in Designs journal"
+                    },
+                    {
+                        year: "2018",
+                        text: "Graduate Assistant in Mechatronics Engineering",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "2017-2018",
+                        text: "Graduate Assistant at Meru University of Science and Technology",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "2016",
+                        text: "Published",
+                        link: "https://doi.org/10.5281/zenodo.5573980",
+                        title: "Development of Interface for control of the postgraduate students workload in terms of ECTS credits",
+                        journal: ""
+                    }
+                ]
+            },
+            {
+                year: "2010 - 2015",
+                title: "Mechatronics Engineering Foundation",
+                institution: "Dedan Kimathi University of Technology",
+                description: "Comprehensive foundation in mechatronics systems, robotics, and control systems with practical industry experience.",
+                achievementTitle: "Key Experiences",
+                achievements: [
+                    {
+                        year: "2014",
+                        text: "BSc Project",
+                        link: "https://doi.org/10.5281/ZENODO.5573975",
+                        title: "Development of a low-cost subtractive-additive machine",
+                        journal: ""
+                    },
+                    {
+                        year: "2013",
+                        text: "Mechatronic Intern at Mantrac Kenya Ltd",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "",
+                        text: "Hands-on training in industrial automation",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "",
+                        text: "Foundation in robotics and control systems",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "",
+                        text: "Early interest in engineering innovation",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    }
+                ]
+            }
+        ];
+
+        // Function to generate timeline HTML
+        function generateTimeline() {
+            const timelineContainer = document.getElementById('timeline-container');
+            if (!timelineContainer) return;
+
+            let timelineHTML = '';
+            
+            timelineData.forEach((milestone, index) => {
+                // Create achievement items
+                let achievementsList = '';
+                milestone.achievements.forEach(achievement => {
+                    let achievementHTML = `<li>`;
+                    
+                    if (achievement.year) {
+                        achievementHTML += `${achievement.year}: `;
+                    }
+                    
+                    if (achievement.link) {
+                        achievementHTML += `<a href="${achievement.link}" target="_blank" style="color: var(--primary-solid); text-decoration: none;">`;
+                        if (achievement.text) {
+                            achievementHTML += `${achievement.text} `;
+                        }
+                        achievementHTML += `"${achievement.title}"</a>`;
+                    } else {
+                        achievementHTML += achievement.text;
+                        if (achievement.title) {
+                            achievementHTML += ` "${achievement.title}"`;
+                        }
+                    }
+                    
+                    if (achievement.journal) {
+                        achievementHTML += ` ${achievement.journal}`;
+                    }
+                    
+                    achievementHTML += `</li>`;
+                    achievementsList += achievementHTML;
+                });
+
+                // Create timeline item
+                timelineHTML += `
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-title">${milestone.title}</div>
+                            <div class="timeline-institution">${milestone.institution}</div>
+                            <div class="timeline-description">${milestone.description}</div>
+                            <div class="timeline-achievements">
+                                <h4>${milestone.achievementTitle}</h4>
+                                <ul>
+                                    ${achievementsList}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-year">${milestone.year}</div>
+                    </div>
+                `;
+            });
+
+            timelineContainer.innerHTML = timelineHTML;
+        }
+
+        // Generate timeline on page load
+        document.addEventListener('DOMContentLoaded', generateTimeline);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let currentSection = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Update scroll progress
+            const scrollProgress = document.querySelector('.scroll-progress-bar');
+            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (window.scrollY / windowHeight) * 100;
+            scrollProgress.style.width = scrolled + '%';
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = '0.1s';
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Update copyright year automatically
+        function updateCopyrightYear() {
+            const currentYear = new Date().getFullYear();
+            const copyrightElement = document.getElementById('copyright-year');
+            if (copyrightElement) {
+                copyrightElement.textContent = `2010 - ${currentYear}`;
+            }
+        }
+        
+        // Update copyright year on page load
+        updateCopyrightYear();
+    </script>
+</body>
+</html>

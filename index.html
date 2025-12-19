@@ -3,36 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dr. Sam Macharia - PhD in Electronics & Information Systems Engineering. Researcher, educator, and engineer specializing in Research, Education, and Product Development.">
-    <meta name="author" content="Dr. Sam Macharia">
-    <meta name="keywords" content="Sam Macharia, PhD, Research, Education, Product Development, AIoT, BioPhysics, Molecular Motors, SiliconWit">
+    <meta name="description" content="SiliconWit - Harmonizing technology and human intellect through research, education, and product development. Engineering, computing, science, and philosophy.">
+    <meta name="author" content="SiliconWit">
+    <meta name="keywords" content="SiliconWit, Research, Education, Product Development, AIoT, IoT, Engineering, Computing, Science, Philosophy, Innovation, Open Source">
     <link rel="icon" href="assets/img/favicon.ico">
-    <title>Dr. Sam Macharia (PhD) - Research, Education & Product Development</title>
+    <title>SiliconWit - Research, Education & Product Development</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --primary-solid: #667eea;
-            --primary-dark: #5a67d8;
-            --research: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            --education: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-            --product: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-            --text-primary: #2d3748;
-            --text-secondary: #4a5568;
-            --text-muted: #718096;
+            /* SiliconWit Brand Colors */
+            --sw-teal: #2A9D8F;
+            --sw-teal-light: #3db5a5;
+            --sw-teal-dark: #238179;
+            --sw-golden-yellow: #E9C46A;
+            --sw-slate-blue: #598392;
+            --sw-medium-gray: #6B7280;
+            --sw-light-gray: #E5E7EB;
+            --sw-very-light-gray: #F8FAFC;
+
+            /* Primary Brand Gradients */
+            --primary: linear-gradient(135deg, #2A9D8F 0%, #238179 100%);
+            --primary-solid: #2A9D8F;
+            --primary-dark: #238179;
+            --research: linear-gradient(135deg, #2A9D8F 0%, #3db5a5 100%);
+            --education: linear-gradient(135deg, #E9C46A 0%, #f4d68a 100%);
+            --product: linear-gradient(135deg, #598392 0%, #6b99aa 100%);
+
+            /* Text Colors */
+            --text-primary: #1f2937;
+            --text-secondary: #6B7280;
+            --text-muted: #9CA3AF;
+
+            /* Background Colors */
             --bg-primary: #ffffff;
-            --bg-secondary: #f7fafc;
+            --bg-secondary: #F8FAFC;
             --bg-card: rgba(255, 255, 255, 0.95);
-            --border: #e2e8f0;
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
-            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
-            --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+            /* Border and Dividers */
+            --border: #E5E7EB;
+
+            /* Shadows */
+            --shadow-sm: 0 1px 3px rgba(42, 157, 143, 0.1);
+            --shadow: 0 4px 6px rgba(42, 157, 143, 0.07);
+            --shadow-lg: 0 10px 25px rgba(42, 157, 143, 0.1);
+            --shadow-xl: 0 20px 40px rgba(42, 157, 143, 0.1);
+
+            /* Border Radius */
             --border-radius: 16px;
             --border-radius-sm: 8px;
+
+            /* Transitions */
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -89,7 +112,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+            background: linear-gradient(45deg, rgba(42, 157, 143, 0.9) 0%, rgba(35, 129, 121, 0.9) 100%);
             z-index: 1;
         }
 
@@ -241,7 +264,7 @@
 
         .nav-links a:hover, .nav-links a.active {
             color: var(--primary-solid);
-            background: rgba(102, 126, 234, 0.1);
+            background: rgba(42, 157, 143, 0.1);
         }
 
         /* Main Content */
@@ -545,7 +568,7 @@
         }
 
         .timeline-achievements {
-            background: rgba(102, 126, 234, 0.05);
+            background: rgba(42, 157, 143, 0.05);
             padding: 1rem;
             border-radius: var(--border-radius-sm);
             border-left: 3px solid var(--primary-solid);
@@ -637,15 +660,15 @@
         }
 
         .link-item:hover {
-            background: rgba(102, 126, 234, 0.05);
-            border-color: rgba(102, 126, 234, 0.2);
+            background: rgba(42, 157, 143, 0.05);
+            border-color: rgba(42, 157, 143, 0.2);
             transform: translateX(4px);
         }
 
         .link-icon {
             width: 20px;
             height: 20px;
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #2A9D8F 0%, #3db5a5 100%);
             border-radius: 4px;
             display: flex;
             align-items: center;
@@ -805,7 +828,7 @@
             left: 0;
             width: 100%;
             height: 4px;
-            background: rgba(102, 126, 234, 0.2);
+            background: rgba(42, 157, 143, 0.2);
             z-index: 1000;
         }
 
@@ -825,11 +848,11 @@
     <header>
         <div class="container">
             <div class="profile-section">
-                <img src="https://secure.gravatar.com/avatar/c7002a588fdbcedaec0c5f507752c5e0?s=250&d=mm&r=x" alt="Dr. Sam Macharia" class="profile-img">
+                <img src="siliconwit-logo-and-trademark.png" alt="SiliconWit" class="profile-img">
                 <div class="hero-content">
-                    <h1>Dr. Sam Macharia (PhD)</h1>
-                    <p class="hero-subtitle">Researcher, Educator & Engineer</p>
-                    <p class="hero-description">Interested in science, computing, engineering, and philosophy.</p>
+                    <h1>SiliconWit</h1>
+                    <p class="hero-subtitle">Innovation Through Collaboration</p>
+                    <p class="hero-description">Harmonizing technology and human intellect through research, education, and product development.</p>
                     
                     <div class="three-pillars">
                         <div class="pillar">
@@ -847,11 +870,11 @@
                     </div>
                     
                     <div class="credentials">
-                        <div class="credential-badge">PhD, Gifu University</div>
-                        <div class="credential-badge">Lecturer, DeKUT</div>
-                        <div class="credential-badge">EBK Registered</div>
-                        <div class="credential-badge">IEK Member</div>
-                        <div class="credential-badge">SiliconWit Founder</div>
+                        <div class="credential-badge">Open Source</div>
+                        <div class="credential-badge">IoT Solutions</div>
+                        <div class="credential-badge">AI & Simulation</div>
+                        <div class="credential-badge">Engineering</div>
+                        <div class="credential-badge">Educational Resources</div>
                     </div>
                 </div>
             </div>
@@ -874,39 +897,39 @@
         <section id="about" class="fade-in">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">About Me</h2>
+                    <h2 class="section-title">About SiliconWit</h2>
                     <p class="section-subtitle">Bridging theory and practice through research, education, and innovation</p>
                 </div>
                 <div class="about-grid">
                     <div class="about-content">
-                        <p>Researcher, educator, and engineer interested in science, computing, engineering, and philosophy.</p>
-                        
-                        <p>👯 Open to collaboration in <strong>Artificial Intelligence of Things (AIoT)</strong> and <strong>BioPhysics</strong>.</p>
-                        
-                        <p>👨‍💻 Summary of my work is available at <a href="https://orcid.org/0000-0002-7326-7502" target="_blank" style="color: var(--primary-solid); text-decoration: none;">orcid.org/0000-0002-7326-7502</a>.</p>
-                        
-                        <p>📝 Visit our new platform <a href="https://siliconwit.com/" target="_blank" style="color: var(--primary-solid); text-decoration: none;">SiliconWit.COM</a> for research, education, and product development.</p>
-                        
+                        <p>SiliconWit is a growing startup navigating the realms of research, education, and product development in engineering, computing, science, and philosophy. We believe in harmonizing technology and human intellect to create a future where machines and minds collaborate for the greater good.</p>
+
+                        <p>Our platform bridges learning and implementation, offering open educational opportunities suitable for beginners and those pursuing real product development. We develop <strong>IoT-based devices</strong> that enhance connectivity and practical <strong>SaaS solutions</strong> that solve real-world problems.</p>
+
+                        <p>Skilled in <strong>Mechanical CAD</strong>, <strong>PCB Design</strong>, <strong>Embedded Programming</strong>, <strong>Web/App Development</strong>, <strong>Mathematical Modeling and Simulation</strong>, and <strong>AI</strong>, we bring together diverse expertise to foster innovation and open-source collaboration.</p>
+
+                        <p>Visit <a href="https://siliconwit.com/" target="_blank" style="color: var(--primary-solid); text-decoration: none;">SiliconWit.COM</a> to explore our research, educational resources, and products.</p>
+
                         <div class="fun-fact">
-                            <p>⚡ <strong>Fun fact:</strong> Science is, so far, the most reliable tool for uncovering objective truths about nature.</p>
+                            <p><strong>Our Vision:</strong> Creating a future where machines and minds collaborate harmoniously for the greater good, advocating for safe and beneficial technology.</p>
                         </div>
                     </div>
                     <div class="quick-stats">
                         <div class="stat-card">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Publications</div>
+                            <div class="stat-number">Open</div>
+                            <div class="stat-label">Source</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-number">3</div>
-                            <div class="stat-label">Degrees</div>
+                            <div class="stat-number">Multi</div>
+                            <div class="stat-label">Disciplinary</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-number">5+</div>
-                            <div class="stat-label">Years Research</div>
+                            <div class="stat-number">IoT</div>
+                            <div class="stat-label">Solutions</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-number">2</div>
-                            <div class="stat-label">Countries</div>
+                            <div class="stat-number">Global</div>
+                            <div class="stat-label">Community</div>
                         </div>
                     </div>
                 </div>
@@ -917,7 +940,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Core Focus Areas</h2>
-                    <p class="section-subtitle">Three pillars of my professional journey</p>
+                    <p class="section-subtitle">Three pillars driving innovation and collaboration</p>
                 </div>
                 <div class="core-areas">
                     <div class="area-card research">
@@ -925,13 +948,13 @@
                             <i class="fas fa-microscope"></i>
                         </div>
                         <h3 class="area-title">Research</h3>
-                        <p class="area-description">Research in molecular motors, biosensors, and bio-inspired technologies with publications in peer-reviewed journals.</p>
+                        <p class="area-description">We advance knowledge through rigorous scientific inquiry in engineering and technology fields, fostering innovation and discovery.</p>
                         <ul class="area-highlights">
-                            <li>Molecular motor systems & microtubule dynamics</li>
+                            <li>Mathematical modeling and simulation</li>
                             <li>Artificial Intelligence of Things (AIoT)</li>
                             <li>BioPhysics & bio-inspired technologies</li>
                             <li>Wireless sensor networks & IoT systems</li>
-                            <li>Publications in scientific journals</li>
+                            <li>Open-source research collaboration</li>
                         </ul>
                     </div>
                     
@@ -940,13 +963,13 @@
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <h3 class="area-title">Education</h3>
-                        <p class="area-description">Teaching and mentoring students in mechatronics engineering and related fields.</p>
+                        <p class="area-description">We provide comprehensive learning resources and materials designed to share knowledge across various skill levels.</p>
                         <ul class="area-highlights">
-                            <li>Lecturer in Mechatronics Engineering at DeKUT</li>
-                            <li>Curriculum development & innovation</li>
-                            <li>Student research supervision</li>
-                            <li>Academic program development</li>
-                            <li>International education experience (Kenya, Japan)</li>
+                            <li>Open educational opportunities for all levels</li>
+                            <li>Practical examples with technical rigor</li>
+                            <li>Mathematical modeling tutorials</li>
+                            <li>IoT-related applications and guidance</li>
+                            <li>Support for learners and educators</li>
                         </ul>
                     </div>
                     
@@ -955,13 +978,13 @@
                             <i class="fas fa-rocket"></i>
                         </div>
                         <h3 class="area-title">Product Development</h3>
-                        <p class="area-description">Translating research into practical solutions through collaborative innovations and engineering implementations.</p>
+                        <p class="area-description">We transform research findings into practical applications and innovative solutions that solve real-world problems.</p>
                         <ul class="area-highlights">
-                            <li>SiliconWit.COM platform founder</li>
-                            <li>Collaborative research innovations</li>
-                            <li>3D-printed sensor technologies</li>
-                            <li>Engineering consulting & solutions</li>
-                            <li>Technology transfer & practical implementations</li>
+                            <li>IoT-based devices enhancing connectivity</li>
+                            <li>Practical SaaS solutions</li>
+                            <li>Real-Time Robot Arm Simulator</li>
+                            <li>PCB Design & embedded systems</li>
+                            <li>Web/App development solutions</li>
                         </ul>
                     </div>
                 </div>
@@ -971,8 +994,8 @@
         <section id="timeline" class="fade-in">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Professional Timeline</h2>
-                    <p class="section-subtitle">Key milestones, publications, and achievements</p>
+                    <h2 class="section-title">Our Journey</h2>
+                    <p class="section-subtitle">Key milestones, projects, and achievements</p>
                 </div>
                 <div class="timeline" id="timeline-container">
                     <!-- Timeline will be generated by JavaScript -->
@@ -983,91 +1006,87 @@
         <section id="links" class="fade-in">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Professional Networks</h2>
-                    <p class="section-subtitle">Connect across academic and professional platforms</p>
+                    <h2 class="section-title">Connect With Us</h2>
+                    <p class="section-subtitle">Join our community across various platforms</p>
                 </div>
                 <div class="links-grid">
                     <div class="link-category">
                         <h3 class="category-title">
-                            <div class="category-icon"><i class="fas fa-graduation-cap"></i></div>
-                            Academic Profiles
+                            <div class="category-icon"><i class="fas fa-globe"></i></div>
+                            Main Platform
                         </h3>
-                        <a href="https://orcid.org/0000-0002-7326-7502" target="_blank" class="link-item">
-                            <div class="link-icon"><i class="fas fa-id-card"></i></div>
-                            <span>ORCID Profile (Primary)</span>
+                        <a href="https://siliconwit.com/" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-home"></i></div>
+                            <span>SiliconWit.COM</span>
                         </a>
-                        <a href="https://scholar.google.co.jp/citations?user=jLrt9VsAAAAJ&hl" target="_blank" class="link-item">
-                            <div class="link-icon"><i class="fas fa-graduation-cap"></i></div>
-                            <span>Google Scholar</span>
+                        <a href="https://siliconwit.com/blog" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-blog"></i></div>
+                            <span>Blog</span>
                         </a>
-                        <a href="https://www.researchgate.net/profile/Sam-Macharia" target="_blank" class="link-item">
-                            <div class="link-icon"><i class="fas fa-flask"></i></div>
-                            <span>ResearchGate</span>
-                        </a>
-                        <a href="https://dkut.academia.edu/SamMacharia" target="_blank" class="link-item">
-                            <div class="link-icon"><i class="fas fa-university"></i></div>
-                            <span>Academia.edu</span>
-                        </a>
-                        <a href="https://sciprofiles.com/profile/SamMachariaPhD" target="_blank" class="link-item">
+                        <a href="https://siliconwit.com/research" target="_blank" class="link-item">
                             <div class="link-icon"><i class="fas fa-microscope"></i></div>
-                            <span>SciProfiles</span>
+                            <span>Research</span>
+                        </a>
+                        <a href="https://siliconwit.com/education" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <span>Education</span>
                         </a>
                     </div>
 
                     <div class="link-category">
                         <h3 class="category-title">
                             <div class="category-icon"><i class="fas fa-code"></i></div>
-                            Technical Platforms
+                            Development & Code
                         </h3>
-                        <a href="https://github.com/sammachariaphd" target="_blank" class="link-item">
+                        <a href="https://github.com/SiliconWit" target="_blank" class="link-item">
                             <div class="link-icon"><i class="fab fa-github"></i></div>
-                            <span>GitHub</span>
+                            <span>GitHub Organization</span>
                         </a>
-                        <a href="https://stackoverflow.com/users/7842910/sam-macharia" target="_blank" class="link-item">
-                            <div class="link-icon"><i class="fab fa-stack-overflow"></i></div>
-                            <span>Stack Overflow</span>
+                        <a href="https://github.com/SiliconWit" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-robot"></i></div>
+                            <span>Robot Arm Simulator</span>
                         </a>
-                        <a href="https://dl.acm.org/profile/99660296729" target="_blank" class="link-item">
-                            <div class="link-icon"><i class="fas fa-database"></i></div>
-                            <span>ACM Digital Library</span>
-                        </a>
-                    </div>
-
-                    <div class="link-category">
-                        <h3 class="category-title">
-                            <div class="category-icon"><i class="fas fa-certificate"></i></div>
-                            Professional Bodies
-                        </h3>
-                        <a href="https://engineers.ebk.go.ke/search/search-card/UFJPRjAwNTA4Mw==" target="_blank" class="link-item">
-                            <div class="link-icon"><i class="fas fa-engineering"></i></div>
-                            <span>Engineers Board of Kenya (EBK)</span>
-                        </a>
-                        <a href="https://members.iekenya.org/search/search-card/UFJPRjAwMTI4MzA=" target="_blank" class="link-item">
-                            <div class="link-icon"><i class="fas fa-users"></i></div>
-                            <span>Institution of Engineers Kenya (IEK)</span>
-                        </a>
-                        <a href="https://mechatronics.dkut.ac.ke/dr-samuel-macharia-kangiri/" target="_blank" class="link-item">
-                            <div class="link-icon"><i class="fas fa-university"></i></div>
-                            <span>DeKUT Faculty Profile</span>
+                        <a href="https://github.com/SiliconWit" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-project-diagram"></i></div>
+                            <span>Open Source Projects</span>
                         </a>
                     </div>
 
                     <div class="link-category">
                         <h3 class="category-title">
-                            <div class="category-icon"><i class="fas fa-rocket"></i></div>
-                            Platform & Projects
+                            <div class="category-icon"><i class="fas fa-users"></i></div>
+                            Social Media
                         </h3>
-                        <a href="https://siliconwit.com/" target="_blank" class="link-item">
-                            <div class="link-icon"><i class="fas fa-globe"></i></div>
-                            <span>SiliconWit Platform</span>
+                        <a href="https://www.instagram.com/siliconwit/" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fab fa-instagram"></i></div>
+                            <span>Instagram</span>
                         </a>
-                        <a href="https://www.goodreads.com/SamMachariaPhD" target="_blank" class="link-item">
-                            <div class="link-icon"><i class="fas fa-book"></i></div>
-                            <span>Goodreads</span>
+                        <a href="https://www.tiktok.com/@siliconwit" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fab fa-tiktok"></i></div>
+                            <span>TikTok</span>
                         </a>
-                        <a href="https://reviewers.joss.theoj.org/reviewers/3832" target="_blank" class="link-item">
-                            <div class="link-icon"><i class="fas fa-edit"></i></div>
-                            <span>JOSS Reviewer</span>
+                        <a href="https://twitter.com/siliconwit" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fab fa-twitter"></i></div>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+
+                    <div class="link-category">
+                        <h3 class="category-title">
+                            <div class="category-icon"><i class="fas fa-handshake"></i></div>
+                            Community & Support
+                        </h3>
+                        <a href="https://siliconwit.com/contact/" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-comments"></i></div>
+                            <span>Contact & Support</span>
+                        </a>
+                        <a href="https://siliconwit.com/contributors/" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-hands-helping"></i></div>
+                            <span>Contributors</span>
+                        </a>
+                        <a href="https://siliconwit.com/expert-support/" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-life-ring"></i></div>
+                            <span>Expert Support</span>
                         </a>
                     </div>
                 </div>
@@ -1078,15 +1097,15 @@
     <footer id="contact">
         <div class="container">
             <div class="footer-content">
-                <h3 style="margin-bottom: 1rem; color: white;">Let's Collaborate</h3>
+                <h3 style="margin-bottom: 1rem; color: white;">Join Our Community</h3>
                 <p style="margin-bottom: 2rem; opacity: 0.8;">Interested in research, education, or product development opportunities?</p>
                 <div class="footer-links">
-                    <a href="https://orcid.org/0000-0002-7326-7502" target="_blank">ORCID</a>
-                    <a href="https://siliconwit.com/" target="_blank">SiliconWit</a>
-                    <a href="https://scholar.google.co.jp/citations?user=jLrt9VsAAAAJ&hl" target="_blank">Google Scholar</a>
-                    <a href="https://github.com/sammachariaphd" target="_blank">GitHub</a>
+                    <a href="https://siliconwit.com/" target="_blank">SiliconWit.COM</a>
+                    <a href="https://github.com/SiliconWit" target="_blank">GitHub</a>
+                    <a href="https://www.instagram.com/siliconwit/" target="_blank">Instagram</a>
+                    <a href="https://www.tiktok.com/@siliconwit" target="_blank">TikTok</a>
                 </div>
-                <p style="opacity: 0.6; font-size: 0.9rem;">&copy; <span id="copyright-year">2010 - 2025</span> Dr. Sam Macharia. All rights reserved.</p>
+                <p style="opacity: 0.6; font-size: 0.9rem;">&copy; <span id="copyright-year">2022 - 2025</span> SiliconWit. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1099,42 +1118,42 @@
         const timelineData = [
             {
                 year: "2022 - Present",
-                title: "Lecturer & SiliconWit Founder",
-                institution: "Dedan Kimathi University of Technology",
-                description: "Conducting research in AIoT and BioPhysics while teaching mechatronics engineering. Founded SiliconWit for collaborative innovations in research, education, and practical implementations.",
+                title: "Platform Launch & Growth",
+                institution: "SiliconWit.COM",
+                description: "Launched SiliconWit as a comprehensive platform for research, education, and product development in engineering, computing, science, and philosophy.",
                 achievementTitle: "Key Achievements",
                 achievements: [
                     {
                         year: "2025",
-                        text: "Published",
-                        link: "https://doi.org/10.1038/s41598-025-03384-y",
-                        title: "Active spiralling of microtubules driven by kinesin motors",
-                        journal: "in Scientific Reports"
+                        text: "Expanding open-source collaboration ecosystem",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "2024",
+                        text: "Growing community of contributors and learners",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "2023",
+                        text: "Developed IoT-based solutions and SaaS products",
+                        link: "",
+                        title: "",
+                        journal: ""
                     },
                     {
                         year: "2022",
                         text: "Founded",
                         link: "https://siliconwit.com/",
-                        title: "SiliconWit.COM platform",
-                        journal: ""
+                        title: "SiliconWit platform",
+                        journal: "for collaborative innovation"
                     },
                     {
-                        year: "2022",
-                        text: "PhD Dissertation",
-                        link: "https://doi.org/10.5281/ZENODO.5745872",
-                        title: "Modelling and Simulation of Biosensors Driven by Myosin Motors",
-                        journal: ""
-                    },
-                    {
-                        year: "Ongoing",
-                        text: "Supervising student research projects in AIoT",
-                        link: "",
-                        title: "",
-                        journal: ""
-                    },
-                    {
-                        year: "Ongoing",
-                        text: "Curriculum development in mechatronics",
+                        year: "",
+                        text: "Support from Google, Cloudflare, GitHub, and GitLab",
                         link: "",
                         title: "",
                         journal: ""
@@ -1142,131 +1161,131 @@
                 ]
             },
             {
-                year: "2018 - 2022",
-                title: "PhD Research & Publications",
-                institution: "Gifu University, Japan",
-                description: "Research on molecular motor systems and bio-inspired technologies with publications in peer-reviewed journals.",
-                achievementTitle: "Major Publications",
+                year: "2023 - Present",
+                title: "Open Source Projects",
+                institution: "GitHub",
+                description: "Building and maintaining open-source projects that bridge research and practical applications in robotics, simulation, and IoT.",
+                achievementTitle: "Notable Projects",
                 achievements: [
                     {
-                        year: "2022",
-                        text: "",
-                        link: "https://doi.org/10.1109/tnb.2022.3170562",
-                        title: "Motility resilience of molecular shuttles against defective motors",
-                        journal: "- IEEE Transactions on NanoBioscience"
-                    },
-                    {
-                        year: "2022",
-                        text: "",
-                        link: "https://doi.org/10.1038/s41598-022-06941-x",
-                        title: "Linking path and filament persistence lengths of microtubules gliding over kinesin",
-                        journal: "- Scientific Reports"
-                    },
-                    {
-                        year: "2022",
-                        text: "",
-                        link: "https://doi.org/10.1016/j.bios.2022.114011",
-                        title: "Effects of defective motors on the active transport in biosensors powered by biomolecular motors",
-                        journal: "- Biosensors and Bioelectronics"
-                    },
-                    {
-                        year: "2021",
-                        text: "",
-                        link: "https://doi.org/10.1007/978-3-030-92163-7_17",
-                        title: "A Mathematical Model Predicting Gliding Speed of Actin Molecular Shuttles",
-                        journal: "- LNICST"
-                    },
-                    {
-                        year: "2021",
-                        text: "",
-                        link: "https://doi.org/10.1109/mhs53471.2021.9767188",
-                        title: "Simulations of Actomyosin-Based Molecular Shuttles Controlled by External Force",
-                        journal: "- IEEE MHS Conference"
-                    }
-                ]
-            },
-            {
-                year: "2016 - 2018",
-                title: "Graduate Research & Teaching",
-                institution: "Dedan Kimathi University of Technology",
-                description: "Advanced studies in manufacturing and automation while serving as graduate assistant and conducting research on wireless sensor networks.",
-                achievementTitle: "Research Output",
-                achievements: [
-                    {
-                        year: "2019",
-                        text: "MSc Thesis",
-                        link: "https://doi.org/10.5281/ZENODO.5573869",
-                        title: "Design and Implementation of an Advanced System for Wind Resource Assessment",
+                        year: "",
+                        text: "Real-Time Robot Arm Simulator",
+                        link: "https://github.com/SiliconWit",
+                        title: "",
                         journal: ""
                     },
                     {
-                        year: "2018",
-                        text: "Published",
-                        link: "https://doi.org/10.3390/designs2030021",
-                        title: "Design and calibration of a 3D-printed cup-vane wireless sensor node",
-                        journal: "in Designs journal"
-                    },
-                    {
-                        year: "2018",
-                        text: "Graduate Assistant in Mechatronics Engineering",
+                        year: "",
+                        text: "Mathematical modeling and simulation tools",
                         link: "",
                         title: "",
                         journal: ""
                     },
                     {
-                        year: "2017-2018",
-                        text: "Graduate Assistant at Meru University of Science and Technology",
+                        year: "",
+                        text: "IoT application frameworks",
                         link: "",
                         title: "",
                         journal: ""
                     },
                     {
-                        year: "2016",
-                        text: "Published",
-                        link: "https://doi.org/10.5281/zenodo.5573980",
-                        title: "Development of Interface for control of the postgraduate students workload in terms of ECTS credits",
+                        year: "",
+                        text: "Educational resources and tutorials",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "",
+                        text: "PCB design and embedded systems projects",
+                        link: "",
+                        title: "",
                         journal: ""
                     }
                 ]
             },
             {
-                year: "2010 - 2015",
-                title: "Mechatronics Engineering Foundation",
-                institution: "Dedan Kimathi University of Technology",
-                description: "Comprehensive foundation in mechatronics systems, robotics, and control systems with practical industry experience.",
-                achievementTitle: "Key Experiences",
+                year: "2022 - Present",
+                title: "Educational Initiatives",
+                institution: "SiliconWit Education",
+                description: "Creating comprehensive learning resources that combine mathematical rigor with practical examples for learners at all levels.",
+                achievementTitle: "Educational Focus",
                 achievements: [
                     {
-                        year: "2014",
-                        text: "BSc Project",
-                        link: "https://doi.org/10.5281/ZENODO.5573975",
-                        title: "Development of a low-cost subtractive-additive machine",
-                        journal: ""
-                    },
-                    {
-                        year: "2013",
-                        text: "Mechatronic Intern at Mantrac Kenya Ltd",
+                        year: "",
+                        text: "Open educational content for beginners to advanced learners",
                         link: "",
                         title: "",
                         journal: ""
                     },
                     {
                         year: "",
-                        text: "Hands-on training in industrial automation",
+                        text: "Mathematical modeling and simulation tutorials",
                         link: "",
                         title: "",
                         journal: ""
                     },
                     {
                         year: "",
-                        text: "Foundation in robotics and control systems",
+                        text: "IoT development guides and resources",
                         link: "",
                         title: "",
                         journal: ""
                     },
                     {
                         year: "",
-                        text: "Early interest in engineering innovation",
+                        text: "Support for independent learners and educators",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "",
+                        text: "Blog exploring technology, philosophy, and society",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    }
+                ]
+            },
+            {
+                year: "Future",
+                title: "Vision & Goals",
+                institution: "SiliconWit",
+                description: "Creating a future where machines and minds collaborate harmoniously for the greater good, advocating for safe and beneficial technology.",
+                achievementTitle: "Our Mission",
+                achievements: [
+                    {
+                        year: "",
+                        text: "Research fuels education, which drives innovation",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "",
+                        text: "Continuous cycle of knowledge creation and sharing",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "",
+                        text: "Bridging learning and practical implementation",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "",
+                        text: "Fostering global open-source collaboration",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "",
+                        text: "Building innovative solutions for real-world challenges",
                         link: "",
                         title: "",
                         journal: ""
@@ -1403,7 +1422,7 @@
             const currentYear = new Date().getFullYear();
             const copyrightElement = document.getElementById('copyright-year');
             if (copyrightElement) {
-                copyrightElement.textContent = `2010 - ${currentYear}`;
+                copyrightElement.textContent = `2022 - ${currentYear}`;
             }
         }
         

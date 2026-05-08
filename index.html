@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SiliconWit - Harmonizing technology and human intellect through research, education, and product development. Engineering, computing, science, and philosophy.">
+    <meta name="description" content="SiliconWit on GitHub. Open-source projects, documentation sites, and downloads. Visit siliconwit.com for the main site.">
     <meta name="author" content="SiliconWit">
-    <meta name="keywords" content="SiliconWit, Research, Education, Product Development, AIoT, IoT, Engineering, Computing, Science, Philosophy, Innovation, Open Source">
+    <meta name="keywords" content="SiliconWit, GitHub, Open Source, DEEPS, SiliconWit Seal, OpenPGP, AIoT, IoT">
     <link rel="icon" href="assets/img/favicon.ico">
-    <title>SiliconWit - Research, Education & Product Development</title>
+    <title>SiliconWit on GitHub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -231,6 +231,58 @@
         .credential-badge:hover {
             background: rgba(255, 255, 255, 0.3);
             transform: translateY(-2px);
+        }
+
+        .hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .hero-cta--primary {
+            background: var(--sw-golden-yellow);
+            color: var(--text-primary);
+            border-color: var(--sw-golden-yellow);
+        }
+
+        .hero-cta--primary:hover {
+            background: #f4d68a;
+            border-color: #f4d68a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+        }
+
+        .hero-cta--ghost {
+            background: rgba(255, 255, 255, 0.12);
+            color: white;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-cta--ghost:hover {
+            background: rgba(255, 255, 255, 0.22);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 600px) {
+            .hero-cta {
+                font-size: 0.92rem;
+                padding: 0.6rem 1.1rem;
+            }
         }
 
         /* Navigation */
@@ -853,31 +905,27 @@
             <div class="profile-section">
                 <img src="siliconwit-logo-and-trademark.png" alt="SiliconWit" class="profile-img">
                 <div class="hero-content">
-                    <h1>SiliconWit</h1>
-                    <p class="hero-subtitle">Innovation Through Collaboration</p>
-                    <p class="hero-description">Harmonizing technology and human intellect through research, education, and product development.</p>
-                    
-                    <div class="three-pillars">
-                        <div class="pillar">
-                            <i class="fas fa-microscope pillar-icon"></i>
-                            <div class="pillar-title">Research</div>
-                        </div>
-                        <div class="pillar">
-                            <i class="fas fa-graduation-cap pillar-icon"></i>
-                            <div class="pillar-title">Education</div>
-                        </div>
-                        <div class="pillar">
-                            <i class="fas fa-rocket pillar-icon"></i>
-                            <div class="pillar-title">Product Development</div>
-                        </div>
-                    </div>
-                    
-                    <div class="credentials">
-                        <div class="credential-badge">Open Source</div>
-                        <div class="credential-badge">IoT Solutions</div>
-                        <div class="credential-badge">AI & Simulation</div>
-                        <div class="credential-badge">Engineering</div>
-                        <div class="credential-badge">Educational Resources</div>
+                    <h1>SiliconWit on GitHub</h1>
+                    <p class="hero-subtitle">Open-source projects and documentation</p>
+                    <p class="hero-description">Browse the source, downloads, and live docs for our projects.</p>
+
+                    <div class="hero-ctas">
+                        <a href="https://siliconwit.com/" target="_blank" rel="noopener" class="hero-cta hero-cta--primary">
+                            <i class="fas fa-globe"></i>
+                            <span>siliconwit.com</span>
+                        </a>
+                        <a href="https://github.com/SiliconWit" target="_blank" rel="noopener" class="hero-cta hero-cta--ghost">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Org</span>
+                        </a>
+                        <a href="https://siliconwit.github.io/deeps/" target="_blank" rel="noopener" class="hero-cta hero-cta--ghost">
+                            <i class="fas fa-book"></i>
+                            <span>DEEPS Docs</span>
+                        </a>
+                        <a href="https://siliconwit.github.io/siwit-seal-releases/" target="_blank" rel="noopener" class="hero-cta hero-cta--ghost">
+                            <i class="fas fa-lock"></i>
+                            <span>SiliconWit Seal Docs</span>
+                        </a>
                     </div>
                 </div>
             </div>

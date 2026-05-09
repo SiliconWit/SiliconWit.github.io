@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SiliconWit on GitHub. Open-source projects, documentation sites, and downloads. Visit siliconwit.com for the main site.">
+    <meta name="description" content="SiliconWit on GitHub. Open-source projects, documentation, and downloads. Learn at siliconwit.com; run connected operations at siliconwit.io.">
     <meta name="author" content="SiliconWit">
-    <meta name="keywords" content="SiliconWit, GitHub, Open Source, DEEPS, SiliconWit Seal, OpenPGP, AIoT, IoT">
+    <meta name="keywords" content="SiliconWit, SiliconWit.io, SiliconWit.com, GitHub, Open Source, DEEPS, SiliconWit Seal, OpenPGP, AIoT, IoT, IoT platform, MQTT, device monitoring">
     <link rel="icon" href="assets/img/favicon.ico">
     <title>SiliconWit on GitHub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -263,6 +263,20 @@
         .hero-cta--primary:hover {
             background: #f4d68a;
             border-color: #f4d68a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+        }
+
+        .hero-cta--product {
+            background: #ffffff;
+            color: var(--sw-slate-blue);
+            border-color: #ffffff;
+        }
+
+        .hero-cta--product:hover {
+            background: #eef4f7;
+            border-color: #eef4f7;
+            color: var(--sw-slate-blue);
             transform: translateY(-2px);
             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
         }
@@ -907,12 +921,16 @@
                 <div class="hero-content">
                     <h1>SiliconWit on GitHub</h1>
                     <p class="hero-subtitle">Open-source projects and documentation</p>
-                    <p class="hero-description">Browse the source, downloads, and live docs for our projects.</p>
+                    <p class="hero-description">Learn the engineering on <strong>siliconwit.com</strong>, run connected devices on <strong>siliconwit.io</strong>, and browse the source here.</p>
 
                     <div class="hero-ctas">
                         <a href="https://siliconwit.com/" target="_blank" rel="noopener" class="hero-cta hero-cta--primary">
-                            <i class="fas fa-globe"></i>
+                            <i class="fas fa-graduation-cap"></i>
                             <span>siliconwit.com</span>
+                        </a>
+                        <a href="https://siliconwit.io/" target="_blank" rel="noopener" class="hero-cta hero-cta--product">
+                            <i class="fas fa-broadcast-tower"></i>
+                            <span>siliconwit.io</span>
                         </a>
                         <a href="https://github.com/SiliconWit" target="_blank" rel="noopener" class="hero-cta hero-cta--ghost">
                             <i class="fab fa-github"></i>
@@ -955,11 +973,11 @@
                     <div class="about-content">
                         <p>SiliconWit is a growing startup navigating the realms of research, education, and product development in engineering, computing, science, and philosophy. We believe in harmonizing technology and human intellect to create a future where machines and minds collaborate for the greater good.</p>
 
-                        <p>Our platform bridges learning and implementation, offering open educational opportunities suitable for beginners and those pursuing real product development. We develop <strong>IoT-based devices</strong> that enhance connectivity and practical <strong>SaaS solutions</strong> that solve real-world problems.</p>
+                        <p>Our work spans two surfaces. <a href="https://siliconwit.com/" target="_blank" style="color: var(--primary-solid); text-decoration: none;"><strong>SiliconWit.com</strong></a> is the learning hub: open courses, research, and tutorials in mechatronics, embedded systems, PCB design, and engineering. <a href="https://siliconwit.io/" target="_blank" style="color: var(--sw-slate-blue); text-decoration: none;"><strong>SiliconWit.io</strong></a> is the operations platform: an IoT and AIoT product that turns device data into real-time dashboards, alerts, automation rules, and AI-powered anomaly detection over MQTT, CoAP, and HTTP.</p>
 
                         <p>Skilled in <strong>Mechanical CAD</strong>, <strong>PCB Design</strong>, <strong>Embedded Programming</strong>, <strong>Web/App Development</strong>, <strong>Mathematical Modeling and Simulation</strong>, and <strong>AI</strong>, we bring together diverse expertise to foster innovation and open-source collaboration.</p>
 
-                        <p>Visit <a href="https://siliconwit.com/" target="_blank" style="color: var(--primary-solid); text-decoration: none;">SiliconWit.COM</a> to explore our research, educational resources, and products.</p>
+                        <p>This GitHub site hosts the open-source code, downloads, and project documentation that supports both surfaces.</p>
 
                         <div class="fun-fact">
                             <p><strong>Our Vision:</strong> Creating a future where machines and minds collaborate harmoniously for the greater good, advocating for safe and beneficial technology.</p>
@@ -1029,13 +1047,13 @@
                             <i class="fas fa-rocket"></i>
                         </div>
                         <h3 class="area-title">Product Development</h3>
-                        <p class="area-description">We transform research findings into practical applications and innovative solutions that solve real-world problems.</p>
+                        <p class="area-description">We turn research into shipping products. Our flagship is <a href="https://siliconwit.io/" target="_blank" style="color: var(--sw-slate-blue); font-weight: 600; text-decoration: none;">SiliconWit.io</a>, an IoT and AIoT operations platform for connected devices.</p>
                         <ul class="area-highlights">
-                            <li>IoT-based devices enhancing connectivity</li>
-                            <li>Practical SaaS solutions</li>
+                            <li><a href="https://siliconwit.io/" target="_blank" style="color: var(--sw-slate-blue); text-decoration: none;">SiliconWit.io</a>: real-time dashboards, alerts, automation</li>
+                            <li>MQTT, CoAP, and HTTP device connectivity</li>
+                            <li>AI-powered anomaly detection and forecasting</li>
                             <li>Real-Time Robot Arm Simulator</li>
-                            <li>PCB Design & embedded systems</li>
-                            <li>Web/App development solutions</li>
+                            <li>PCB design and embedded systems</li>
                         </ul>
                     </div>
                 </div>
@@ -1063,12 +1081,16 @@
                 <div class="links-grid">
                     <div class="link-category">
                         <h3 class="category-title">
-                            <div class="category-icon"><i class="fas fa-globe"></i></div>
-                            Main Platform
+                            <div class="category-icon"><i class="fas fa-graduation-cap"></i></div>
+                            Learning Hub (siliconwit.com)
                         </h3>
                         <a href="https://siliconwit.com/" target="_blank" class="link-item">
                             <div class="link-icon"><i class="fas fa-home"></i></div>
-                            <span>SiliconWit.COM</span>
+                            <span>SiliconWit.com</span>
+                        </a>
+                        <a href="https://siliconwit.com/about" target="_blank" class="link-item">
+                            <div class="link-icon"><i class="fas fa-info-circle"></i></div>
+                            <span>About</span>
                         </a>
                         <a href="https://siliconwit.com/blog" target="_blank" class="link-item">
                             <div class="link-icon"><i class="fas fa-blog"></i></div>
@@ -1081,6 +1103,33 @@
                         <a href="https://siliconwit.com/education" target="_blank" class="link-item">
                             <div class="link-icon"><i class="fas fa-graduation-cap"></i></div>
                             <span>Education</span>
+                        </a>
+                    </div>
+
+                    <div class="link-category">
+                        <h3 class="category-title">
+                            <div class="category-icon" style="background: var(--product);"><i class="fas fa-broadcast-tower"></i></div>
+                            IoT Platform (siliconwit.io)
+                        </h3>
+                        <a href="https://siliconwit.io/" target="_blank" class="link-item">
+                            <div class="link-icon" style="background: linear-gradient(135deg, #598392 0%, #6b99aa 100%);"><i class="fas fa-bolt"></i></div>
+                            <span>SiliconWit.io</span>
+                        </a>
+                        <a href="https://siliconwit.io/about" target="_blank" class="link-item">
+                            <div class="link-icon" style="background: linear-gradient(135deg, #598392 0%, #6b99aa 100%);"><i class="fas fa-info-circle"></i></div>
+                            <span>About</span>
+                        </a>
+                        <a href="https://siliconwit.io/" target="_blank" class="link-item">
+                            <div class="link-icon" style="background: linear-gradient(135deg, #598392 0%, #6b99aa 100%);"><i class="fas fa-tachometer-alt"></i></div>
+                            <span>Real-time Dashboards</span>
+                        </a>
+                        <a href="https://siliconwit.io/" target="_blank" class="link-item">
+                            <div class="link-icon" style="background: linear-gradient(135deg, #598392 0%, #6b99aa 100%);"><i class="fas fa-bell"></i></div>
+                            <span>Alerts and Automation</span>
+                        </a>
+                        <a href="https://siliconwit.io/" target="_blank" class="link-item">
+                            <div class="link-icon" style="background: linear-gradient(135deg, #598392 0%, #6b99aa 100%);"><i class="fas fa-brain"></i></div>
+                            <span>AI Anomaly Detection</span>
                         </a>
                     </div>
 
@@ -1151,7 +1200,8 @@
                 <h3 style="margin-bottom: 1rem; color: white;">Join Our Community</h3>
                 <p style="margin-bottom: 2rem; opacity: 0.8;">Interested in research, education, or product development opportunities?</p>
                 <div class="footer-links">
-                    <a href="https://siliconwit.com/" target="_blank">SiliconWit.COM</a>
+                    <a href="https://siliconwit.com/" target="_blank">SiliconWit.com</a>
+                    <a href="https://siliconwit.io/" target="_blank">SiliconWit.io</a>
                     <a href="https://github.com/SiliconWit" target="_blank">GitHub</a>
                     <a href="https://www.instagram.com/siliconwit/" target="_blank">Instagram</a>
                     <a href="https://www.tiktok.com/@siliconwit" target="_blank">TikTok</a>
@@ -1174,6 +1224,13 @@
                 description: "Launched SiliconWit as a comprehensive platform for research, education, and product development in engineering, computing, science, and philosophy.",
                 achievementTitle: "Key Achievements",
                 achievements: [
+                    {
+                        year: "2026",
+                        text: "OpenPGP file encryption desktop app",
+                        link: "https://siliconwit.github.io/siwit-seal-releases/",
+                        title: "SiliconWit Seal",
+                        journal: ""
+                    },
                     {
                         year: "2026",
                         text: "Departmental Exams Processing Spreadsheet-based System",
@@ -1213,6 +1270,50 @@
                         year: "",
                         text: "Support from Google, Cloudflare, GitHub, and GitLab",
                         link: "",
+                        title: "",
+                        journal: ""
+                    }
+                ]
+            },
+            {
+                year: "2024 - Present",
+                title: "SiliconWit.io IoT Platform",
+                institution: '<a href="https://siliconwit.io" target="_blank">SiliconWit.io</a>',
+                description: "Launched the operations platform for connected devices: real-time dashboards, multi-channel alerts, automation rules, and AI anomaly detection across MQTT, CoAP, and HTTP.",
+                achievementTitle: "Platform Capabilities",
+                achievements: [
+                    {
+                        year: "",
+                        text: "Real-time device monitoring and dashboards",
+                        link: "https://siliconwit.io/",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "",
+                        text: "Multi-channel alerts (email, SMS, Slack, Discord)",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "",
+                        text: "Remote device control and automation rules",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "",
+                        text: "AI-powered anomaly detection and forecasting",
+                        link: "",
+                        title: "",
+                        journal: ""
+                    },
+                    {
+                        year: "",
+                        text: "Tiered pricing from free to enterprise",
+                        link: "https://siliconwit.io/",
                         title: "",
                         journal: ""
                     }
